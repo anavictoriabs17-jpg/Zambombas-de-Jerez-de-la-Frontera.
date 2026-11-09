@@ -3,70 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Ana Victoria</title>
+    <title>ANA VICTORIA BAZÁN</title>
     <style>
-        body {
-            background-color: #ff69b4; /* Fondo rosa vibrante */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
+        /* Estilos globales inspirados en ZARA */
+        * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        nav {
-            margin-bottom: 20px;
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+            letter-spacing: 0.8px;
+            line-height: 1.4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Menú superior sobrio y en mayúsculas */
+        header {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 60px;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
         }
 
         nav a {
-            color: #ffffff;
+            color: #000000;
             text-decoration: none;
-            font-weight: bold;
-            margin: 0 10px;
-            padding: 5px 12px;
-            border: 2px solid #ffffff;
-            border-radius: 15px;
-            transition: all 0.3s ease;
+            margin-left: 20px;
+            transition: opacity 0.2s;
         }
 
         nav a:hover {
-            background-color: #ffffff;
-            color: #ff69b4;
+            opacity: 0.5;
         }
 
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        /* Contenido Principal */
+        main {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .brand-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            color: #666666;
         }
 
         h2 {
-            font-size: 1.8rem;
-            margin-top: 0;
+            font-size: 2.8rem;
             font-weight: 300;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+            line-height: 1.1;
         }
 
-        p {
-            font-size: 1.1rem;
-            max-width: 600px;
-            line-height: 1.5;
+        p.description {
+            font-size: 0.95rem;
+            max-width: 450px;
+            color: #333333;
+            margin-bottom: 40px;
+            font-weight: 300;
         }
 
+        /* Reproductor de video integrado con estética minimalista */
         .video-container {
-            margin-top: 25px;
             width: 100%;
-            max-width: 560px;
+            max-width: 700px;
             aspect-ratio: 16 / 9;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            border-radius: 12px;
-            overflow: hidden;
+            background-color: #000000;
+            margin-bottom: 20px;
         }
 
         iframe {
@@ -76,38 +100,48 @@
         }
 
         .video-link {
-            margin-top: 15px;
-            color: #ffffff;
-            text-decoration: underline;
-            font-weight: 600;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 1px solid #000000;
+            padding-bottom: 2px;
+            transition: opacity 0.2s;
+        }
+
+        .video-link:hover {
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#video">Música</a>
-    </nav>
+    <header>
+        <div class="brand-title">ZARA STYLE CONCEPT</div>
+        <nav>
+            <a href="#inicio">INICIO</a>
+            <a href="#video">MÚSICA</a>
+        </nav>
+    </header>
 
-    <div id="inicio">
-        <h1>¡Hola, mundo!</h1>
-        <h2>Ana Victoria Bazán</h2>
-        <p>Este es el contenido visible de la página.</p>
-    </div>
+    <main id="inicio">
+        <h2>ANA VICTORIA BAZÁN</h2>
+        <p class="description">Este es el contenido visible de la página.</p>
 
-    <div id="video" class="video-container">
-        <iframe 
-            src="https://www.youtube.com/embed/7oHOR72v-tU" 
-            title="ASI CANTA JEREZ EN NAVIDAD - JALEO - 2023 LIVE" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-        </iframe>
-    </div>
+        <div id="video" class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/7oHOR72v-tU" 
+                title="ASI CANTA JEREZ EN NAVIDAD - JALEO - 2023 LIVE" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
 
-    <a class="video-link" href="http://www.youtube.com/watch?v=7oHOR72v-tU" target="_blank" rel="noopener noreferrer">
-        Ver "Así Canta Jerez en Navidad - Jaleo [00:00:00]" en YouTube
-    </a>
+        <a class="video-link" href="http://www.youtube.com/watch?v=7oHOR72v-tU" target="_blank" rel="noopener noreferrer">
+            VER EN YOUTUBE — ASI CANTA JEREZ EN NAVIDAD [00:00:00]
+        </a>
+    </main>
 
 </body>
 </html>
