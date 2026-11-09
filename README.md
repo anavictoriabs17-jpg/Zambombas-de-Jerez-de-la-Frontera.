@@ -1,2 +1,2 @@
-# Zambombas-de-Jerez-de-la-Frontera.0
+# Zambombas-de-Jerez-de-la-Frontera
 Demostración de la creación de una página web. 
