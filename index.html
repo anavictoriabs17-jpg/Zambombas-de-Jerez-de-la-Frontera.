@@ -6,43 +6,108 @@
     <title>Página de Ana Victoria</title>
     <style>
         body {
-            background-color: #ff69b4; /* Fondo rosa */
+            background-color: #ff69b4; /* Fondo rosa vibrante */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #ffffff; /* Texto en blanco */
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            padding: 20px;
             text-align: center;
+            box-sizing: border-box;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 5px 12px;
+            border: 2px solid #ffffff;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ffffff;
+            color: #ff69b4;
         }
 
         h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 0.5rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             margin-top: 0;
             font-weight: 300;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             max-width: 600px;
             line-height: 1.5;
+        }
+
+        .video-container {
+            margin-top: 25px;
+            width: 100%;
+            max-width: 560px;
+            aspect-ratio: 16 / 9;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-link {
+            margin-top: 15px;
+            color: #ffffff;
+            text-decoration: underline;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
 
-    <h1>¡Hola, mundo!</h1>
-    <h2>Ana Victoria Bazán</h2>
-    <p>Este es el contenido visible de la página.</p>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#video">Música</a>
+    </nav>
+
+    <div id="inicio">
+        <h1>¡Hola, mundo!</h1>
+        <h2>Ana Victoria Bazán</h2>
+        <p>Este es el contenido visible de la página.</p>
+    </div>
+
+    <div id="video" class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/7oHOR72v-tU" 
+            title="ASI CANTA JEREZ EN NAVIDAD - JALEO - 2023 LIVE" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <a class="video-link" href="http://www.youtube.com/watch?v=7oHOR72v-tU" target="_blank" rel="noopener noreferrer">
+        Ver "Así Canta Jerez en Navidad - Jaleo [00:00:00]" en YouTube
+    </a>
 
 </body>
 </html>
